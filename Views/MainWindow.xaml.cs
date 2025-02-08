@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace Tumbleweed
+namespace Tumbleweed.Views
 {
     public partial class MainWindow : Window
     {
