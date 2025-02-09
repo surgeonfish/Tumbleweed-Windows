@@ -1,4 +1,4 @@
-﻿namespace Tumbleweed.Views
+﻿namespace Tumbleweed.Views.Windows
 {
     public partial class MainWindow
     {
