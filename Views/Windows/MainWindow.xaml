@@ -5,6 +5,7 @@
                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                  xmlns:local="clr-namespace:Tumbleweed"
                  xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+                 xmlns:pages="clr-namespace:Tumbleweed.Views.Pages"
                  mc:Ignorable="d"
                  ExtendsContentIntoTitleBar="True"
                  WindowBackdropType="Mica"
@@ -33,7 +34,8 @@
                            IsPaneOpen="False">
             <ui:NavigationView.MenuItems>
                 <!-- Home -->
-                <ui:NavigationViewItem Content="Home">
+                <ui:NavigationViewItem Content="Home"
+                                       TargetPageType="{x:Type pages:HomePage}">
                     <ui:NavigationViewItem.Icon>
                         <ui:SymbolIcon Symbol="Home24"/>
                     </ui:NavigationViewItem.Icon>
