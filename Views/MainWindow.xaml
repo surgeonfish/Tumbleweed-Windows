@@ -18,7 +18,36 @@
                     Command="{Binding ElementName=AutoSuggestBox, Path=FocusCommand}"
                     Modifiers="Control"/>
     </ui:FluentWindow.InputBindings>
+
     <Grid>
-        <ui:TitleBar/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Bar -->
+        <ui:TitleBar Grid.Row="0"/>
+
+        <ui:NavigationView Grid.Row="1"
+                           IsBackButtonVisible="Collapsed"
+                           IsPaneOpen="False">
+            <ui:NavigationView.MenuItems>
+                <!-- Home -->
+                <ui:NavigationViewItem Content="Home">
+                    <ui:NavigationViewItem.Icon>
+                        <ui:SymbolIcon Symbol="Home24"/>
+                    </ui:NavigationViewItem.Icon>
+                </ui:NavigationViewItem>
+            </ui:NavigationView.MenuItems>
+
+            <ui:NavigationView.FooterMenuItems>
+                <!-- Settings -->
+                <ui:NavigationViewItem Content="Settings">
+                    <ui:NavigationViewItem.Icon>
+                        <ui:SymbolIcon Symbol="Settings24"/>
+                    </ui:NavigationViewItem.Icon>
+                </ui:NavigationViewItem>
+            </ui:NavigationView.FooterMenuItems>
+        </ui:NavigationView>
     </Grid>
 </ui:FluentWindow>
