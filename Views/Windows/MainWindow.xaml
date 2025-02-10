@@ -31,6 +31,7 @@
 
         <ui:NavigationView x:Name="NavigationView"
                            Grid.Row="1"
+                           OpenPaneLength="280"
                            IsBackButtonVisible="Collapsed"
                            IsPaneOpen="False">
             <ui:NavigationView.MenuItems>
