@@ -29,7 +29,8 @@
         <!-- Title Bar -->
         <ui:TitleBar Grid.Row="0"/>
 
-        <ui:NavigationView Grid.Row="1"
+        <ui:NavigationView x:Name="NavigationView"
+                           Grid.Row="1"
                            IsBackButtonVisible="Collapsed"
                            IsPaneOpen="False">
             <ui:NavigationView.MenuItems>
