@@ -37,7 +37,8 @@
                 <ui:NavigationViewItem Content="Home"
                                        TargetPageType="{x:Type pages:HomePage}">
                     <ui:NavigationViewItem.Icon>
-                        <ui:SymbolIcon Symbol="Home24"/>
+                        <ui:SymbolIcon Symbol="Home24"
+                                       Margin="0,0,4,0"/>
                     </ui:NavigationViewItem.Icon>
                 </ui:NavigationViewItem>
             </ui:NavigationView.MenuItems>
@@ -47,7 +48,8 @@
                 <ui:NavigationViewItem Content="Settings"
                                        TargetPageType="{x:Type pages:SettingsPage}">
                     <ui:NavigationViewItem.Icon>
-                        <ui:SymbolIcon Symbol="Settings24"/>
+                        <ui:SymbolIcon Symbol="Settings24"
+                                       Margin="0,0,4,0"/>
                     </ui:NavigationViewItem.Icon>
                 </ui:NavigationViewItem>
             </ui:NavigationView.FooterMenuItems>
