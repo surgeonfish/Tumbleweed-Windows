@@ -12,8 +12,10 @@
                  WindowCornerPreference="Default"
                  WindowStartupLocation="CenterScreen"
                  Title="MainWindow"
-                 Height="450"
-                 Width="800">
+                 Height="620"
+                 Width="1000"
+                 MinHeight="620"
+                 MinWidth="1000">
     <ui:FluentWindow.InputBindings>
         <KeyBinding Key="F"
                     Command="{Binding ElementName=AutoSuggestBox, Path=FocusCommand}"
@@ -31,6 +33,7 @@
 
         <ui:NavigationView x:Name="NavigationView"
                            Grid.Row="1"
+                           Padding="36,40,36,0"
                            OpenPaneLength="280"
                            IsBackButtonVisible="Collapsed"
                            IsPaneOpen="False">
